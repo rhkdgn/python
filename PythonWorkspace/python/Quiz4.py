@@ -14,9 +14,19 @@
 #  -- 축하합니다 --
 
 #  (활용 예제)
+# from random import *
+# lst = [1,2,3,4,5]
+# print(lst)
+# shuffle(lst)
+# print(lst)
+# print(sample(lst, 1))
+
 from random import *
-lst = [1,2,3,4,5]
-print(lst)
-shuffle(lst)
-print(lst)
-print(sample(lst, 1))
+lst = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]      #조건1
+shuffle(lst)        #조건2,3
+list = sample(lst,4)
+print(list)
+print(" ** 당첨자 발표 **")
+print("치킨 당첨자 :" + str(list[0]))
+print("커피 당첨자 :" + str(list[1]) +","+str(list[2])+","+str(list[3]))
+print(" ** 축하합니다 **")
